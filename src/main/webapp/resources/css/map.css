@@ -1,0 +1,218 @@
+.mapList {
+	
+}
+
+#sidebarContents {
+	text-align: center;
+	width: 25%;
+	height: 80%;
+	margin-top: 10vh;
+	margin-left: 5vw;
+	overflow-y: auto;
+	overflow-x: hidden;
+	position: fixed;
+	top: 0vh;
+	bottom: 10vh;
+	border-right: 1px solid lightgray;
+}
+
+#sidebarContents::-webkit-scrollbar {
+    display: none;
+}
+
+#body {
+	margin: 20px;
+}
+
+#wrap {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+#map {
+	border-radius: 70px;
+	margin-top: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+#center {
+	position: absolute;
+	text-align: center;
+	top: 40vh;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-left: 20vh;
+	bottom: 10vh;
+}
+
+#sidebar {
+	text-align: center;
+}
+
+#sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+#sidebar p {
+	text-align: left;
+}
+
+#sidebar a {
+	display: inline-block;
+	color: #8AAB95;
+}
+
+#sidebar a:hover {
+	color: #2e5a3c;
+}
+
+#sidebarContent .addrMap {
+	white-space: pre-wrap;
+}
+
+#sidebarContent .shopNameMap {
+	color: #8AAB95;
+}
+
+#keywordInput, #categoryInput {
+	margin-top: 10px;
+}
+
+.btn {
+	margin-top: 10px;
+	box-shadow: none;
+}
+
+p.shopName {
+	color: #8AAB95;
+	font-size: 15px;
+}
+
+p.shopAddr {
+	font-size: 12px;
+	white-space: pre-wrap;
+}
+
+p.addr {
+	font-size: 14px;
+}
+
+.shopNameMap {
+	font-size: 16px;
+	color: #2e5a3c;
+}
+
+.addrMap {
+	font-size: 12px;
+	white-space: nowrap;
+}
+
+.categoryMap {
+	font-size: 12px;
+	color: #ced4da;
+}
+
+.reset-button {
+	background-color: #2E5A3C;
+	color: white;
+	border-radius: 10px;
+	cursor: pointer;
+	height: 50px;
+	width: 100px;
+	transition: background-color 0.3s ease;
+	font-family: "KoPubWorldBatang";
+	text-align: center;
+	font-size: 16px;
+	margin-left: 10px;
+	box-shadow: none;
+}
+
+.reset-button:hover {
+	background-color: #487b48;
+}
+
+#buttons {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.btn-search {
+	background-color: #2E5A3C;
+	color: white;
+	border-radius: 10px;
+	cursor: pointer;
+	height: 40px;
+	width: 50px;
+	transition: background-color 0.3s ease;
+	font-family: "KoPubWorldBatang";
+	text-align: center;
+}
+
+.btn-search:hover {
+	background-color: #487b48;
+	border-color: #1e7e34;
+}
+
+.search-keyword {
+	background-color: #ffffff;
+	color: #333;
+	border: 1px solid #ccc;
+	padding: 8px 12px;
+	border-radius: 5px;
+	font-size: 14px;
+	width: 150px;
+	height: 40px;
+	box-sizing: border-box;
+	font-family: "KoPubWorldBatang";
+}
+
+.mypage-submenu a {
+	color: #5c5c5c;
+}
+
+#type {
+	font-family: "KoPubWorldBatang";
+	font-size: 12px;
+	width: 100px;
+	height: 40px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	appearance: none;
+	-webkit-appearance: none;
+	background-repeat: no-repeat;
+	background-position: right 8px center;
+	margin: auto;
+	text-align-last: center;
+	text-align: center;
+	color: gray;
+}
+
+#type option {
+	text-align: center;
+	text-align-last: center;
+}
+
+@media (max-width: 768px) {
+	.report-button, #reset {
+		width: 100%;
+	}
+}
+
+#categoryInput select {
+    font-family: "KoPubWorldBatang";
+    font-size: 12px;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    margin: auto;
+    text-align-last: center;
+    text-align: center;
+    color: gray;
+}

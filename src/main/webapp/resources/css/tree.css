@@ -1,0 +1,267 @@
+@charset "UTF-8";
+
+html {
+	overflow-y: auto; /* 세로 스크롤을 허용합니다. */
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+	margin: 0; /* body의 기본 margin을 제거합니다. */
+	padding: 0; /* body의 기본 padding을 제거합니다. */
+	color: black;
+}
+
+.contentTree {
+	width: 100%;
+	padding: 10%; /* body의 기본 padding을 제거합니다. */
+}
+.mypage-submenu a {
+    color: #5c5c5c;
+}
+
+
+#wrap {
+	height: auto;
+	min-height: 100%;
+	padding-bottom: 250px;
+}
+
+#footer {
+	height: 250px;
+	position: relative;
+	transform: translateY(-100%);
+}
+
+body {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+#actname, #dailyName {
+	color: black;
+}
+
+#mybadge {
+	color: blue;
+	text-decoration: underline;
+}
+
+#dailyCustom {
+	background-color: #F5F5DC;
+}
+
+section {
+	border: 1px solid black;
+	height: 100vh;
+}
+
+.image-container {
+	width: 50%;
+	position: relative;
+}
+
+.overlay-image {
+	position: absolute;
+	top: 63%; /* 부모 요소의 세로 중앙으로부터 */
+	left: 50%; /* 부모 요소의 가로 중앙으로부터 */
+	transform: translate(-50%, -50%); /* 이미지의 중심을 화면의 중심으로 이동 */
+	width: 20%; /* 이미지의 너비를 조정할 수 있습니다. */
+}
+/* WebKit 기반 브라우저 (Chrome, Safari, Edge) */
+progress.treeprocess::-webkit-progress-bar {
+	background-color: #f3f3f3; /* 배경색 */
+	border-radius: 5px; /* 테두리 둥글게 */
+}
+
+progress.treeprocess::-webkit-progress-value {
+	background-color: #538e67; /* 채워지는 부분의 색상 (녹색) */
+	border-radius: 5px; /* 테두리 둥글게 */
+}
+/* progress 요소의 기본 스타일 지정 */
+progress.treeprocess {
+	width: 100%;
+	height: 15px;
+	transform: translate(-50%, -50%); /* 이미지의 중심을 화면의 중심으로 이동 */
+	-webkit-appearance: none; /* WebKit 기반 브라우저 */
+	appearance: none; /* 기타 브라우저 */
+}
+/* WebKit 기반 브라우저 (Chrome, Safari, Edge) */
+progress.treeprocess::-webkit-progress-bar {
+	position: absolute;
+	width: 100%;
+	height: 15px;
+	transform: translate(70%, 200%); /* 이미지의 중심을 화면의 중심으로 이동 */
+	background-color: #f3f3f3; /* 배경색 */
+	border-radius: 5px; /* 테두리 둥글게 */
+}
+
+progress.treeprocess::-webkit-progress-value {
+	background-color: #538e67;
+	border-radius: 5px;
+	height: 15px;
+}
+
+#percentage {
+	color: black;
+	font-size: 20px;
+}
+
+#screen-bg-img {
+	width: 50%;
+}
+
+#lb {
+	width: 15vw;
+	height: 40px;
+	position: relative;
+}
+
+.home-button {
+	width: 193px;
+	height: 252px;
+	margin: 0 auto;
+	margin-top: 16.6px;
+	background-color: #f1f8e9;
+}
+
+.custom-box {
+	width: fit-content;
+	padding: 5px;
+	border: 1px solid #ced4da;
+	border-radius: 5px;
+	font-size: 10px;
+}
+
+#align {
+	width: 80%;
+	margin: auto;
+	top: 20px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column nowrap;
+}
+
+#activitybtn {
+	width: 20%;
+	height: 50%;
+	padding: 20px;
+	text-align: center;
+	background-color: #538e67;
+	border-radius: 20px;
+	border: none;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	font-family: "KoPubWorldBatang";
+}
+
+#activitybtn:hover {
+	background-color: #6b8e51;
+}
+
+#level {
+	color: #1e5631;
+}
+
+#userInfo>p {
+	font-size: 30px;
+	text-align: center;
+}
+
+#userInfo>table {
+	width: 80%;
+	height: 100%;
+	margin-left: 10%;
+}
+
+#myrank-link, #mybadge-link {
+	color: #538e67;
+}
+
+#myrank-link:hover, #mybadge-link:hover {
+	color: #b69a4c;
+}
+
+#userInfo table>tbody>tr>td:nth-child(2) {
+	color: #538e67;
+	font-size: 22px;
+}
+
+#userInfo>table>tbody>tr {
+	font-size: 20px;
+	text-align: center;
+	line-height: 1.2;
+}
+
+.point {
+	color: black;
+}
+
+.point>p>span {
+	font-size: 20px;
+}
+
+.title>p:first-of-type>span {
+	color: #538e67;
+}
+
+@media screen and (min-width: 768px) {
+	#lb {
+		left: -3.4em;
+	}
+}
+/* 모바일 화면에서 적용될 스타일 */
+@media screen and (max-width: 767px) {
+	#lb {
+		left: -1.4em;
+	}
+}
+
+/* 모달 기본 스타일 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    padding-top: 20vh;
+    padding-left: 70vh;
+}
+
+
+/* 모달 콘텐츠 스타일 */
+.modal-content {
+	background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* 모달 닫기 버튼 스타일 */
+.close {
+	position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

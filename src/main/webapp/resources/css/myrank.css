@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+#wrap, #header {
+    display: none;
+}
+#list {
+    max-height: 300px;
+}
+
+body {
+    color: #333;
+    font-family: "KoPubWorldBatang";
+    font-size: 18px;
+    overflow-y: auto;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    color: #2E5A3C;
+}
+
+.table {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+}
+
+th {
+    background-color: #2E5A3C;
+    color: #fff;
+}
+
+td {
+    border-bottom: 1px solid #f2f9ef;
+}
+
+.highlight-row {
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+
+/* 미디어 쿼리를 사용하여 작은 화면에 맞게 조정 */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
